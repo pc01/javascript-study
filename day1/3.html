@@ -1,0 +1,24 @@
+<html>
+<head><script src="library.js"></script></head>
+<body>	
+<p>3</p>
+<script src = "3debug.js"></script>
+hello
+<button onclick="hide(this,true); debug('hide button 1');">Hide1</button>
+<button onclick="hide(this); debug('hide button 2');">Hide2</button>
+world
+<script>
+function hide(e,reflow){
+ if(reflow){
+  e.style.display = "none";
+ }else{
+  e.style.display = "hidden";
+ }	
+}
+function highlight(e){
+  if(!e.className) e.className = "hilite";
+  else e.className += "hilite";
+}
+</script>
+</body>
+</html>
